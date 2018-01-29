@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }} - image</title>
+    </head>
+
+<body>
+    <figure>
+        <img src="{{ url_for('fig', cropzonekey = title) }}" alt="Image Placeholder">
+        <figcaption>Pace as a function of time.
+        </figcaption>
+    </figure>
+
+
+    <figure>
+        <img src="{{ url_for('fig', cropzonekey = title) }}" alt="Image Placeholder" height="200">
+        <figcaption>Histogram of pace.
+        </figcaption>
+    </figure>
+
+
+    <figure>
+        <img src="{{ url_for('plot3') }}" alt="This plot is awesome" height="500">
+        <figcaption>A third awesome plot!
+        </figcaption>
+    </figure>
+
+</body>
+</html>
