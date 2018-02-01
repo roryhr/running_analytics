@@ -64,9 +64,10 @@ def activities(activity_id):
 @app.route('/paceplot')
 def paceplot():
     """Generate pace plot"""
-    fig, ax = plt.subplots(figsize=(8,1))
-    # ax = dist_df.plot(x='time', y='smoothed_speed', ax=ax, legend=None)
-    ax.plot(dist_df['time'], dist_df['smoothed_speed'], legend=False)
+    fig, ax = plt.subplots(figsize=(8,0.6))
+    ax = dist_df.plot(x='time', y='smoothed_speed', ax=ax)
+    # ax.plot(dist_df['time'], dist_df['smoothed_speed'], legend=False)
+    ax.legend_.remove()
     ax.set_xlabel('Time (sec)')
     ax.set_ylabel('Pace (m/s)')
 
