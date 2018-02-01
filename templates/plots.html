@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ activity }} - image</title>
+    </head>
+
+<body>
+    <figure>
+        <img src="{{ url_for('paceplot') }}" alt="Image Placeholder">
+        <figcaption>Pace as a function of time.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="{{ url_for('pacehist') }}" alt="Histogram of pace" height="500">
+        <figcaption>Histogram of pace in minutes per mile.
+        </figcaption>
+    </figure>
+
+</body>
+</html>
