@@ -1,11 +1,15 @@
-# -*- coding: utf-8 -*-
+"""Display plots of Strava activity data
 
-# Usage:
-# $ export FLASK_APP=plot_with_template.py
-# $ flask run
+Usage:
+$ export FLASK_APP=app.py
+$ flask run
 
-# Thanks to SO for getting me started
-# https://stackoverflow.com/questions/20107414/passing-a-matplotlib-figure-to-html-flask
+or with Heroku
+$ heroku local
+
+Reference starting point
+https://stackoverflow.com/questions/20107414/passing-a-matplotlib-figure-to-html-flask
+"""
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
